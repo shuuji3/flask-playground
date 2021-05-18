@@ -30,3 +30,13 @@ def show_post(post_id):
 def show_subpath(subpath):
     """Show the subpath after /path"""
     return f'Subpath {escape(subpath)}'
+
+
+@app.route('/projects/')
+def projects():
+    return 'The project page'
+
+
+@app.route('/about')
+def about():
+    return 'The about page'
